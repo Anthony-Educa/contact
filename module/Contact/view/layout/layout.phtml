@@ -1,0 +1,17 @@
+<?php echo $this->doctype(); ?>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <!--Les Styles-->
+        <title>Contact</title>
+        <?php
+        echo $this->headLink()
+                ->prependStylesheet($this->basePath() . '/css/style.css')
+                ->prependStylesheet($this -> basePath() . '/css/bootstrap-theme.min.css')
+                ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css');
+        ?>
+    </head>
+    <body>
+        <?php echo $this->content; ?>
+    </body>
+</html>
